@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name = "description" content ="skipit">
+
+	<meta name = "author" content ="Stian Skulstad">
+
+	<link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+
+	<link rel="stylesheet" href="skipit.css">
+
+	<title>SkipIT</title>
+
+</head>
+
+<body>
+
+	<!--header med hjemknapp og søkfunksjon-->
+	<header>
+		<section class="top">
+
+
+			<!--DropDown meny til liten skjerm-->
+			<section class="meny">
+
+				<nav class="hjemLink">
+					<a href="skipit.html">SkipIT</a>
+				</nav>
+
+				<div class="dropDown">
+					<div class="dropKnapp">
+						<div class="dropIcon"></div>
+						<div class="dropIcon"></div>
+						<div class="dropIcon"></div>
+					</div>
+					<div class="dropDownInnhold">
+						<a href="#">Log Out</a>
+						<a href="mine_lan.html">My Reservations</a>
+						<a href="#">User settings</a>
+					</div>
+				</div>
+
+				<section class="bruker">
+					<img src="profilepic.jpg" class="profilBilde">
+					<ul class="brukerInfo">
+						<li>John Stash</li>
+						<li> - Some addition info </li>
+					</ul>
+				</section>
+			</section>
+		</section>
+	</header>
+
+	<main>
+
+		<section class="main-content">
+
+
+
+			<!-- Skjemaet gir mulighet for å ha en mer avansert søk. -->
+			<form action="#" name="search" id="avansertSøkForm">
+				<div>
+					<h1><center><!-- Insert whatever --> </center></h1>
+				</div>
+				<fieldset>
+					<legend> <!-- Insert whatever --> </legend>
+					<div class="advancedField">
+						<label for="film_title"> Full name </label>
+						<input id="film_title" name="film_title" class="advancedSearch" type="text" placeholder="e.g. Bill Johnson" >
+					</div>
+					<div class="advancedField">
+						<label for="actor">Phone number </label>
+						<input id="actor" name="actor" class="advancedSearch" type="text" placeholder="e.g. (942) 872-331" >
+					</div>
+					<input class="søkButton" type="submit" value="Confirm">
+				</fieldset>
+				
+			</form>
+
+
+
+
+			</section>
+		</main>
+
+		<footer>
+			Skipit!
+		</footer>
+	</body>
+	</html>

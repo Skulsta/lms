@@ -1,0 +1,454 @@
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+h3 {
+	font-family: helvetica;
+	font-weight: lighter;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+header {
+	background-color: #f1f1f1;
+	color: white;
+}
+
+
+.advancedField {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.avansert_sok {
+	display: flex;
+	justify-content: flex-start;
+	padding: 5px;
+}
+
+.bruker {
+	display: none; /** Change to flex if displayed */
+	order: 3;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	align-items: center;
+}
+
+.brukerInfo {
+	margin: 5px;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	font-family: helvetica;
+	color: black;
+	align-items: center;
+}
+
+.profilBilde {
+	width: 27px;
+	height: 27px;
+}
+
+.meny {
+	display: flex;
+}
+
+.hjemLink {
+	font-family: helvetica;
+	font-size: 38px;
+	order: 1;
+}
+
+.hjemLink:hover {
+	background-color: darkgrey;
+}
+
+.searchInput {
+	border-radius: 15px;
+	border: 1px;
+	width: 80px;
+	height: 35px;
+}
+
+
+/** Advanced search form */
+
+
+
+.advancedSearch {
+	height: 20px;
+	border: thin solid black;
+}
+
+.søkButton {
+	border-radius: 15px;
+	border: 1px;
+	height: 35px;
+	width: 100px;
+	margin-right: 5px;
+
+}
+
+#avansertSøkForm {
+	align-self: center;
+}
+
+#actor, #film_title, #director, #country, #genre {
+	width: 100px;
+	margin-left: 10px;
+}
+
+
+.søkButton:hover {
+	background-color: darkgrey;
+	cursor: pointer;
+}
+
+.søk {
+	align-items: center;
+	order: 4;
+}
+
+.dropDown {
+	position: relative;
+	display: inline-block;
+	order: 0;
+}
+
+.dropKnapp {
+	color: white;
+	margin-right: 5px;
+	padding-top: 2px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+
+/* Innhold i dropdown menyen */
+.dropDownInnhold {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Knappene i drop down menyen */
+.dropDownInnhold a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	font-family: helvetica;
+}
+
+/* Bytter farge på innhold i drop down menyen */
+.dropDownInnhold a:hover {
+	background-color: #f1f1f1
+}
+
+/* Gjør drop down menyen synlig */
+.dropDown:hover .dropDownInnhold {
+	display: block;
+}
+
+.dropDown:hover .dropKnapp {
+	background-color: darkgrey;
+}
+
+.dropIcon {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin-bottom: 6px;
+	margin-top: 6px;
+}
+
+.dropDownInnholdFilm {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 5px;
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+.dropDown:hover .dropDownInnholdFilm {
+	display: block;
+}
+
+.forsideButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/*Knapp til min liste*/
+.minListeButton {
+	display: flex;
+	padding: 2px;
+	background-color: #f1f1f1;
+	border-radius: 15px;
+	width: 70px;
+	height: 20px;
+	font-size: 12px;
+	font-family: helvetica;
+	font-weight: bold;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 5px;
+	order: 3;
+}
+
+.ikon {
+	width: 15px;
+	height: 15px;
+}
+
+.vurdering {
+	display: flex;
+	flex-direction: row;
+	padding: 2px;
+	background-color: #f1f1f1;
+	border-radius: 15px;
+	order: 2;
+	margin-top: 5px;
+	width: 75px;
+	height: 20px;
+	align-items: center;
+	justify-content: space-around;
+	font-family: helvetica;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.star {
+	width: 15px;
+	height: 15px;
+}
+
+.minListeButton:hover, .vurdering:hover {
+	background-color: darkgrey;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+}
+
+.all_movies {
+	display: flex;
+	list-style: none;
+
+}
+
+main {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	flex:1;
+}
+
+.main-content {
+	padding: 10px;
+}
+
+
+.main_bilder {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background-color: #f1f1f1;
+
+}
+
+#retningslinjer {
+	padding: 10px;
+}
+
+ol {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#pic {
+	height: 50px;
+	width: 20px;
+}
+
+.left {
+	flex: 1;
+	padding: 10px;
+}
+
+#left {
+	flex: 1;
+	padding: 10px;
+}
+
+.right {
+	flex: 1;
+	padding: 10px;
+}
+
+.forsideBilde {
+	height: 200px;
+	width: 140px;
+	margin: 5px;
+	transition: width 0.6s, height 0.6s;
+	transition-timing-function: ease-out;
+}
+
+.forsideBilde:hover {
+	
+}
+
+
+
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+}
+
+.overskrift {
+	font-weight: bold;
+}
+
+.info {
+	order: 2;
+}
+
+.aside {
+	display: flex;
+	order: 2;
+	justify-content: space-around;
+	padding-bottom: 5px;
+}
+
+
+fieldset {
+	background-color: #f1f1f1;
+	color: black;
+	display: flex;
+}
+
+footer {
+	background-color: #f1f1f1;
+	width: 100%;
+	color: black;
+	border-top: 5px;
+	border-color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+a {
+	color: black;
+}
+
+@media (max-width: 381px) {
+
+	.forsideBilde {
+		height: 100px;
+		width: 70px;
+		margin: 5px;
+	}
+
+	.bruker {
+		display: none;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+
+	body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+	}
+
+	fieldset {
+	background-color: #f1f1f1;
+	color: black;
+	display: flex;
+	width: 40vw;
+}
+
+	.advancedSearch {
+	height: 20px;
+	border: thin solid black;
+	}
+
+	.bar {
+		display: flex;
+		background-color: lightgray;
+		color: white;
+		justify-content: flex-end;
+	}
+
+	.bruker {
+		display: none; /** Change to flex if displayed */
+		order: 3;
+		margin-left: 15px;
+		align-items: center;
+	}
+
+	.searchInput {
+		width: 150px;
+	}
+
+	.infomedia-banner {
+		display: none;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	h3 {
+		width: 100vw;
+		align-items: center;
+	}
+
+	main {
+		flex-wrap: wrap;
+
+	}
+
+	.forsideBilde {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 5px;
+		order: -1;
+	}
+
+	#actor, #film_title, #director, #country, #genre {
+		width: 125px;
+		margin-left: 10px;
+	}
+
+}
+
+
